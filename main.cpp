@@ -21,6 +21,7 @@ void validexp(string ex){
         else cout<<"status: invalid"<<endl;
     }
     //Until here
+    
     //From here is Meraz's part
     //star
 else if(ex[1]=='*'){
