@@ -3,7 +3,9 @@
 
 using namespace std;
 
+
 void validexp(string ex){
+    //from here was made by Kamruzzaman Uzzal
     string str = "";
     string s1="",s2="";
     int esz=ex.size();
@@ -16,13 +18,16 @@ void validexp(string ex){
         if(str==s1 or str==s2)cout<<"status: valid"<<endl;
         else cout<<"status: invalid"<<endl;
     }
+    //Until here
+    //From here is Meraz's part
 
 
+    //From here is Tuba's part
 
-
+    //From here is Shafin er part
 }
 
-
+//main function created by Kamruzzaman Uzzal
 int main() {
     string input = "";
     cout << "\nTakes in at most 3 elements and is made with U, * and +.\nIt will take one string as input and check if it's"
