@@ -1,2 +1,5 @@
 .DS_Store
-.gitignorei
+.gitignore
+cmake-build-debug
+CMakeLists.txt
+.idea
