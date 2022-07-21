@@ -21,7 +21,7 @@ void validexp(string ex){
         else cout<<"status: invalid"<<endl;
     }
     //Until here
-    
+
     //From here is Meraz's part
     //star
 else if(ex[1]=='*'){
@@ -41,6 +41,7 @@ else if(ex[1]=='*'){
                 else cout<<"status: invalid"<<endl;
             }
         }
+
         else if(esz>2 and ex[2]!='U' and ex[2]!='+' and ex[2]!='*'){
             cout<<"Enter a string to verify [$ for empty string]: ";
             cin>>str;
