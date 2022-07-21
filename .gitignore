@@ -1,0 +1,5 @@
+.DS_Store
+.gitignore
+cmake-build-debug
+CMakeLists.txt
+.idea
