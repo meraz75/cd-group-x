@@ -68,7 +68,55 @@ else if(ex[1]=='*'){
     //Unti here
 
     //From here is Tuba's part
+ //star
+    else if(esz==3 and ex[2]=='*' and ex[1]!='U' and ex[1]!='+' and ex[1]!='*'){
+        cout<<"Enter a string to verify [$ for empty string]: ";
+        cin>>str;
+        int sz=str.size();
 
+        if(str[0]!=ex[0])f=0;
+        if(f){
+            for(int i=1;i<sz;i++){
+                if(str[i]!=ex[1]){
+                    f=0;
+                    break;
+                }
+            }
+        }
+        if(f)cout<<"status: valid"<<endl;
+        else cout<<"status: invalid"<<endl;
+    }
+        //plus
+    else if(ex[1]=='+'){
+
+        if(esz==2){
+            cout<<"Enter a string to verify [$ for empty string]: ";
+            cin>>str;
+            int sz=str.size();
+            for(int i=0;i<sz;i++){
+                if(str[i]!=ex[0]){
+                    f=0;
+                    break;
+                }
+            }
+            if(f)cout<<"status: valid"<<endl;
+            else cout<<"status: invalid"<<endl;
+        }
+        else if(esz>2 and ex[2]!='*' and ex[2]!='U' and ex[2]!='+'){
+            cout<<"Enter a string to verify [$ for empty string]: ";
+            cin>>str;
+            int sz=str.size();
+            for(int i=0;i<sz-1;i++){
+                if(str[i]!=ex[0]){
+                    f=0;
+                    break;
+                }
+            }
+            if(f and str[sz-1]==ex[2])cout<<"status: valid"<<endl;
+            else cout<<"status: invalid"<<endl;
+        }
+        else cout<<"status: invalid expression"<<endl;
+    }
     //Until here
 
     //From here is Shafin er part
